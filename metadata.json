@@ -1,0 +1,8 @@
+{
+  "name": "Mahavir Corporation — B2B Uniform & Workwear Solutions",
+  "description": "Wholesale uniform manufacturer and bulk supplier for corporate, industrial, high-visibility, and security teams with integrated embroidery, printing, and pro-forma quote engine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

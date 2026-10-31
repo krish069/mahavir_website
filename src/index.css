@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #FBFBF9;
+    color: #111827;
+  }
+  
+  .font-heading {
+    font-family: 'Syne', sans-serif;
+  }
+
+  .font-serif-couture {
+    font-family: 'Fraunces', Georgia, serif;
+  }
+
+  .font-mono-num {
+    font-family: 'Space Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Warm luxury styling */
+.paper-card {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 10px 24px -6px rgba(0, 0, 0, 0.03);
+}
+
+.paper-card-subtle {
+  background-color: #F5F4F0;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Custom print stylesheet for pro-forma tax invoice */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  body * {
+    visibility: hidden;
+  }
+  #printable-invoice, #printable-invoice * {
+    visibility: visible;
+  }
+  #printable-invoice {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 24px;
+    background: white !important;
+    color: black !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
